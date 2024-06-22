@@ -1,12 +1,8 @@
 -- this was made in 2 minutes lmao
 
-return function (t, s)
-    script.Parent = t
-
+return function (gui, s)
     local UserInputService = game:GetService("UserInputService")
     local runService = (game:GetService("RunService"));
-
-    local gui = script.Parent
 
     local dragging
     local dragInput
