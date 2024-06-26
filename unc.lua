@@ -1,14 +1,4 @@
-local RunService = game:GetService("RunService")
-
-local opairs = pairs;
-
-pairs = function(t)
-    return opairs(t or {})
-end
-
-local fti = {}
-
-RunService.Heartbeat:Connect(function()
+game:GetService("RunService").Heartbeat:Connect(function()
     for part, data in pairs(fti) do
         if data["Skip"] then
             continue
@@ -48,3 +38,5 @@ firetouchinterest = function(part, part2, state)
 
     task.wait();
 end
+
+getgenv().firetouchinterest = firetouchinterest
