@@ -1,3 +1,5 @@
+local fti = {}
+
 game:GetService("RunService").Heartbeat:Connect(function()
     for part, data in pairs(fti) do
         if data["Skip"] then
